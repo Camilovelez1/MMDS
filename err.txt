@@ -1,0 +1,110 @@
+24/02/20 10:53:43 WARN Utils: Your hostname, Camilo resolves to a loopback address: 127.0.1.1; using 172.29.121.68 instead (on interface eth0)
+24/02/20 10:53:43 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+24/02/20 10:53:46 INFO SparkContext: Running Spark version 3.5.0
+24/02/20 10:53:46 INFO SparkContext: OS info Linux, 5.15.133.1-microsoft-standard-WSL2, amd64
+24/02/20 10:53:46 INFO SparkContext: Java version 11.0.21
+24/02/20 10:53:46 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/02/20 10:53:46 INFO ResourceUtils: ==============================================================
+24/02/20 10:53:46 INFO ResourceUtils: No custom resources configured for spark.driver.
+24/02/20 10:53:46 INFO ResourceUtils: ==============================================================
+24/02/20 10:53:46 INFO SparkContext: Submitted application: PythonWordCount
+24/02/20 10:53:46 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+24/02/20 10:53:46 INFO ResourceProfile: Limiting resource is cpu
+24/02/20 10:53:46 INFO ResourceProfileManager: Added ResourceProfile id: 0
+24/02/20 10:53:46 INFO SecurityManager: Changing view acls to: camilo
+24/02/20 10:53:46 INFO SecurityManager: Changing modify acls to: camilo
+24/02/20 10:53:46 INFO SecurityManager: Changing view acls groups to: 
+24/02/20 10:53:46 INFO SecurityManager: Changing modify acls groups to: 
+24/02/20 10:53:46 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: camilo; groups with view permissions: EMPTY; users with modify permissions: camilo; groups with modify permissions: EMPTY
+24/02/20 10:53:46 INFO Utils: Successfully started service 'sparkDriver' on port 42943.
+24/02/20 10:53:46 INFO SparkEnv: Registering MapOutputTracker
+24/02/20 10:53:46 INFO SparkEnv: Registering BlockManagerMaster
+24/02/20 10:53:46 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+24/02/20 10:53:46 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+24/02/20 10:53:46 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+24/02/20 10:53:46 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-959ecbcd-fda7-4818-9306-f7fc085553b0
+24/02/20 10:53:46 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+24/02/20 10:53:46 INFO SparkEnv: Registering OutputCommitCoordinator
+24/02/20 10:53:46 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+24/02/20 10:53:47 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+24/02/20 10:53:47 INFO Executor: Starting executor ID driver on host 172.29.121.68
+24/02/20 10:53:47 INFO Executor: OS info Linux, 5.15.133.1-microsoft-standard-WSL2, amd64
+24/02/20 10:53:47 INFO Executor: Java version 11.0.21
+24/02/20 10:53:47 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+24/02/20 10:53:47 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@2f30a924 for default.
+24/02/20 10:53:47 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 37977.
+24/02/20 10:53:47 INFO NettyBlockTransferService: Server created on 172.29.121.68:37977
+24/02/20 10:53:47 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/02/20 10:53:47 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 172.29.121.68, 37977, None)
+24/02/20 10:53:47 INFO BlockManagerMasterEndpoint: Registering block manager 172.29.121.68:37977 with 434.4 MiB RAM, BlockManagerId(driver, 172.29.121.68, 37977, None)
+24/02/20 10:53:47 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 172.29.121.68, 37977, None)
+24/02/20 10:53:47 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 172.29.121.68, 37977, None)
+24/02/20 10:53:47 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+24/02/20 10:53:47 INFO SharedState: Warehouse path is 'file:/home/camilo/MMDS/spark-warehouse'.
+24/02/20 10:53:48 INFO InMemoryFileIndex: It took 44 ms to list leaf files for 1 paths.
+24/02/20 10:53:48 INFO FileSourceStrategy: Pushed Filters: 
+24/02/20 10:53:49 INFO FileSourceStrategy: Post-Scan Filters: 
+24/02/20 10:53:49 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 199.2 KiB, free 434.2 MiB)
+24/02/20 10:53:49 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 34.2 KiB, free 434.2 MiB)
+24/02/20 10:53:49 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 172.29.121.68:37977 (size: 34.2 KiB, free: 434.4 MiB)
+24/02/20 10:53:49 INFO SparkContext: Created broadcast 0 from javaToPython at NativeMethodAccessorImpl.java:0
+24/02/20 10:53:49 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+24/02/20 10:53:49 INFO SparkContext: Starting job: collect at /home/camilo/MMDS/wordcount.py:38
+24/02/20 10:53:49 INFO DAGScheduler: Registering RDD 6 (reduceByKey at /home/camilo/MMDS/wordcount.py:37) as input to shuffle 0
+24/02/20 10:53:49 INFO DAGScheduler: Got job 0 (collect at /home/camilo/MMDS/wordcount.py:38) with 1 output partitions
+24/02/20 10:53:49 INFO DAGScheduler: Final stage: ResultStage 1 (collect at /home/camilo/MMDS/wordcount.py:38)
+24/02/20 10:53:49 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 0)
+24/02/20 10:53:49 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 0)
+24/02/20 10:53:49 INFO DAGScheduler: Submitting ShuffleMapStage 0 (PairwiseRDD[6] at reduceByKey at /home/camilo/MMDS/wordcount.py:37), which has no missing parents
+24/02/20 10:53:49 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 22.5 KiB, free 434.2 MiB)
+24/02/20 10:53:49 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 11.6 KiB, free 434.1 MiB)
+24/02/20 10:53:49 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 172.29.121.68:37977 (size: 11.6 KiB, free: 434.4 MiB)
+24/02/20 10:53:49 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1580
+24/02/20 10:53:49 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 0 (PairwiseRDD[6] at reduceByKey at /home/camilo/MMDS/wordcount.py:37) (first 15 tasks are for partitions Vector(0))
+24/02/20 10:53:49 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+24/02/20 10:53:49 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (172.29.121.68, executor driver, partition 0, PROCESS_LOCAL, 8207 bytes) 
+24/02/20 10:53:49 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+24/02/20 10:53:50 INFO FileScanRDD: Reading File path: file:///home/camilo/MMDS/don_quixote.txt, range: 0-2391728, partition values: [empty row]
+24/02/20 10:53:50 INFO CodeGenerator: Code generated in 136.151893 ms
+24/02/20 10:53:50 INFO LineRecordReader: Found UTF-8 BOM and skipped it
+24/02/20 10:53:51 INFO PythonRunner: Times: total = 1115, boot = 462, init = 233, finish = 420
+24/02/20 10:53:51 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1917 bytes result sent to driver
+24/02/20 10:53:51 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 1427 ms on 172.29.121.68 (executor driver) (1/1)
+24/02/20 10:53:51 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+24/02/20 10:53:51 INFO PythonAccumulatorV2: Connected to AccumulatorServer at host: 127.0.0.1 port: 33939
+24/02/20 10:53:51 INFO DAGScheduler: ShuffleMapStage 0 (reduceByKey at /home/camilo/MMDS/wordcount.py:37) finished in 1.539 s
+24/02/20 10:53:51 INFO DAGScheduler: looking for newly runnable stages
+24/02/20 10:53:51 INFO DAGScheduler: running: Set()
+24/02/20 10:53:51 INFO DAGScheduler: waiting: Set(ResultStage 1)
+24/02/20 10:53:51 INFO DAGScheduler: failed: Set()
+24/02/20 10:53:51 INFO DAGScheduler: Submitting ResultStage 1 (PythonRDD[9] at collect at /home/camilo/MMDS/wordcount.py:38), which has no missing parents
+24/02/20 10:53:51 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 10.0 KiB, free 434.1 MiB)
+24/02/20 10:53:51 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 6.0 KiB, free 434.1 MiB)
+24/02/20 10:53:51 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 172.29.121.68:37977 (size: 6.0 KiB, free: 434.3 MiB)
+24/02/20 10:53:51 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1580
+24/02/20 10:53:51 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (PythonRDD[9] at collect at /home/camilo/MMDS/wordcount.py:38) (first 15 tasks are for partitions Vector(0))
+24/02/20 10:53:51 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+24/02/20 10:53:51 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (172.29.121.68, executor driver, partition 0, NODE_LOCAL, 7433 bytes) 
+24/02/20 10:53:51 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+24/02/20 10:53:51 INFO ShuffleBlockFetcherIterator: Getting 1 (343.8 KiB) non-empty blocks including 1 (343.8 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+24/02/20 10:53:51 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 7 ms
+24/02/20 10:53:51 INFO PythonRunner: Times: total = 89, boot = -234, init = 301, finish = 22
+24/02/20 10:53:51 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 502961 bytes result sent to driver
+24/02/20 10:53:51 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 143 ms on 172.29.121.68 (executor driver) (1/1)
+24/02/20 10:53:51 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+24/02/20 10:53:51 INFO DAGScheduler: ResultStage 1 (collect at /home/camilo/MMDS/wordcount.py:38) finished in 0.156 s
+24/02/20 10:53:51 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+24/02/20 10:53:51 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+24/02/20 10:53:51 INFO DAGScheduler: Job 0 finished: collect at /home/camilo/MMDS/wordcount.py:38, took 1.753705 s
+24/02/20 10:53:51 INFO SparkContext: SparkContext is stopping with exitCode 0.
+24/02/20 10:53:51 INFO SparkUI: Stopped Spark web UI at http://172.29.121.68:4040
+24/02/20 10:53:51 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+24/02/20 10:53:51 INFO MemoryStore: MemoryStore cleared
+24/02/20 10:53:51 INFO BlockManager: BlockManager stopped
+24/02/20 10:53:51 INFO BlockManagerMaster: BlockManagerMaster stopped
+24/02/20 10:53:51 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+24/02/20 10:53:51 INFO SparkContext: Successfully stopped SparkContext
+24/02/20 10:53:52 INFO ShutdownHookManager: Shutdown hook called
+24/02/20 10:53:52 INFO ShutdownHookManager: Deleting directory /tmp/spark-388f6d62-7870-4188-b9ca-9794ce33aea4
+24/02/20 10:53:52 INFO ShutdownHookManager: Deleting directory /tmp/spark-ac2fafe2-9314-4814-9e51-e66fd83e256d/pyspark-72d2d27a-f006-4f27-a733-39aa5ba83378
+24/02/20 10:53:52 INFO ShutdownHookManager: Deleting directory /tmp/spark-ac2fafe2-9314-4814-9e51-e66fd83e256d
