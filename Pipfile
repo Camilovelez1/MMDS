@@ -7,6 +7,9 @@ name = "pip_conf_index_global"
 notebook = "~=7.1.0"
 pyspark = "~=3.5.0"
 import-java = "~=0.6"
+numpy = "~=1.26.4"
+pandas = "~=2.2.1"
+matplotlib = "~=3.8.3"
 
 [dev-packages]
 
